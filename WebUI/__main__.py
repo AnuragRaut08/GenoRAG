@@ -10,7 +10,6 @@ def main():
     parser.add_argument("-f", "--main_folder", type=str, help="main folder path")
     args = parser.parse_args()
 
-    
     app_path = os.path.join(current_dir, "app.py")
     
     sys.argv = [
