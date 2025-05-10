@@ -60,6 +60,7 @@ def cache_error(func):
             
     return wrapper
 
+
 def cache_error_async(func):
     @wraps(func)
     async def wrapper(*args, **kwargs):
@@ -93,6 +94,7 @@ def cache_error_async(func):
         return response
             
     return wrapper
+
 
 def clear_cache(path:str) -> None:
     with open(path,'w') as f:
