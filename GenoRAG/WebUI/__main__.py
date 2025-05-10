@@ -13,7 +13,7 @@ def main():
     
     app_path = os.path.join(current_dir, "app.py")
     
-    # 使用 -- 传递参数给 Streamlit
+   
     sys.argv = [
         "streamlit", 
         "run", 
