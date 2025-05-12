@@ -17,8 +17,8 @@ def LLM_route(config : ModelConfig) -> LLM:
 
     service_provider = config.get("service_provider")
     model_name = config.get("model_name")
-    embedding_model_name = config.get("embedding_model_name",None)
-    api_keys = config.get("api_keys",None)
+    # embedding_model_name = config.get("embedding_model_name",None)
+    # api_keys = config.get("api_keys",None)
         
     match service_provider:
         case "openai":
