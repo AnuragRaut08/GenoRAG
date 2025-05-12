@@ -7,12 +7,12 @@ from abc import ABC, abstractmethod
 LLMOutput: TypeAlias = str
 LLMQuery: TypeAlias = str
 LLMPrompt: TypeAlias = str
-# ModelConfig: TypeAlias = Dict[str, Any]
-# JSONSchema: TypeAlias = BaseModel
-# EmbeddingInput: TypeAlias = str
-# EmbeddingOutput: TypeAlias = float
-# OpenAI_message: TypeAlias = List[dict]
-# Gemini_content: TypeAlias = List[str]
+ModelConfig: TypeAlias = Dict[str, Any]
+JSONSchema: TypeAlias = BaseModel
+EmbeddingInput: TypeAlias = str
+EmbeddingOutput: TypeAlias = float
+OpenAI_message: TypeAlias = List[dict]
+Gemini_content: TypeAlias = List[str]
 
 
 
