@@ -104,10 +104,10 @@ class LLMBase(ABC,Generic[I,O]):
         """
         pass
     
-    # @abstractmethod
-    # async def API_client_async(self, input: I) -> O:
-    #     """
-    #     Abstract method to set the API client.
-    #     """
-    #     pass
+    @abstractmethod
+    async def API_client_async(self, input: I) -> O:
+        """
+        Abstract method to set the API client.
+        """
+        pass
     
