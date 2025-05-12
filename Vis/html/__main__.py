@@ -2,7 +2,7 @@ import argparse
 from .visual_html import visualize
 from rich import console
 
-
+console = console.Console()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', "--main_folder", type=str, required=True)
