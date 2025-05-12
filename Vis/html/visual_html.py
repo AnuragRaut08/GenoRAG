@@ -50,7 +50,19 @@ def add_nodes_to_network(net, subgraph, mapper,weighted_nodes):
         node_type = node_dict['type']
         color = get_node_color(node_type)
         net.add_node(node, label=node_type, title=mapper.get(node, 'context'), color=color, size=20 * weighted_nodes[node] + 20)
-
+        
+def get_node_color(node_type):
+    match node_type:
+        case 'entity':
+            return '#ADD8E6'  
+        case 'attribute':
+            return '#FFD700'
+        case 'relationship':
+            return '#FF7F50'  
+        case 'high_level_element':
+            return '#98FB98'  
+        case 'semantic_unit':
+            return '#D8BFD8'
 
 
 def add_edges_to_network(net, subgraph):
