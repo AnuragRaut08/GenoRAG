@@ -107,10 +107,10 @@ def visualize(main_folder,nodes_num=2000):
     net = create_network()
     subgraph,weighted_nodes = filter_nodes(graph,nodes_num)
 
-    # add_nodes_to_network(net, subgraph, mapper,weighted_nodes)
-    # add_edges_to_network(net, subgraph)
+    add_nodes_to_network(net, subgraph, mapper,weighted_nodes)
+    add_edges_to_network(net, subgraph)
 
-    # set_network_options(net)
+    set_network_options(net)
     
     console.print(Text(f"edges_count: {len(subgraph.edges)}", style="bold green"))
     console.print(Text(f"nodes_count: {len(subgraph.nodes)}", style="bold green"))
