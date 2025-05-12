@@ -20,17 +20,17 @@ def LLM_route(config : ModelConfig) -> LLM:
     embedding_model_name = config.get("embedding_model_name",None)
     api_keys = config.get("api_keys",None)
         
-    match service_provider:
-        case "openai":
-            return OPENAI(model_name, api_keys, config)
-        case "openai_embedding":
-            return OpenAI_Embedding(embedding_model_name, api_keys, config)
-        case "gemini":
-            return Gemini(model_name, api_keys, config)
-        case "gemini_embedding":
-            return Gemini_Embedding(embedding_model_name, api_keys, config)
-        case _:
-            raise ValueError("Service provider not supported")
+    # match service_provider:
+    #     case "openai":
+    #         return OPENAI(model_name, api_keys, config)
+    #     case "openai_embedding":
+    #         return OpenAI_Embedding(embedding_model_name, api_keys, config)
+    #     case "gemini":
+    #         return Gemini(model_name, api_keys, config)
+    #     case "gemini_embedding":
+    #         return Gemini_Embedding(embedding_model_name, api_keys, config)
+    #     case _:
+    #         raise ValueError("Service provider not supported")
    
             
 
