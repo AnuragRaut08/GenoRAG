@@ -36,12 +36,6 @@ from google.api_core.exceptions import (
 
 
 
-
-
-
-
-
-
 OpenAI = LazyImport('openai','OpenAI')
 AzureOpenAI = LazyImport('openai','AzureOpenAI')
 AsyncOpenAI = LazyImport('openai','AsyncOpenAI')
