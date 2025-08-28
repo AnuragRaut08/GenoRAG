@@ -3,6 +3,7 @@ from .logger import setup_logger
 import json
 import os
 
+
 error_logger = setup_logger(__name__,os.path.join(os.getcwd(),'error.log'))
 
 def error_handler(func): 
