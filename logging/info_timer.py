@@ -11,3 +11,4 @@ def info_timer(message:str):
             return result
         return wrapper
     return decorator
+    
