@@ -12,8 +12,6 @@ def LLM_route(config : ModelConfig) -> LLM:
     
     '''Route the request to the appropriate LLM service provider'''
         
-
-
     service_provider = config.get("service_provider")
     model_name = config.get("model_name")
     embedding_model_name = config.get("embedding_model_name",None)
