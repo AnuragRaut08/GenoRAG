@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from abc import ABC, abstractmethod
 
 # Type Aliases for improved readability and maintainability
+
 LLMOutput: TypeAlias = str
 LLMQuery: TypeAlias = str
 LLMPrompt: TypeAlias = str
